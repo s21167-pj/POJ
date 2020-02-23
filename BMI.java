@@ -6,18 +6,15 @@ public class BMI {
 
         Scanner in = new Scanner(System.in);
 
-
         System.out.print("Enter weight in kg: ");
-        int kg = in.nextInt();
+        int weight = in.nextInt();
 
 
-        System.out.print("Enter height in m: ");
-        int m = in.nextInt();
+        System.out.print("Enter height in cm: ");
+        int heightInCentimetre = in.nextInt();
 
-        double weightInKilos = kg;
-        double heightInMeters = (m * 0.01);
-        double bmi = weightInKilos / (heightInMeters * heightInMeters);
-
+        double heightInMeters = (heightInCentimetre * 0.01);
+        double bmi = weight / (heightInMeters * heightInMeters);
 
         System.out.println("Your BMI is: " + bmi);
 
