@@ -1,3 +1,9 @@
+/*
+BMI Calculator implemented in Java.
+Author: Marcel
+ */
+
+
 import java.util.Scanner; // Import Scanner class for get user input
 
 public class BMI {  //
