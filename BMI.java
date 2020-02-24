@@ -6,7 +6,7 @@ Author: Marcel
 
 import java.util.Scanner; // Import Scanner class for get user input
 
-public class BMI {  //
+public class BMI {
 
     public static void main(String[] args) {
 
