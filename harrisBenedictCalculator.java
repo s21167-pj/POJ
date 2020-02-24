@@ -20,11 +20,11 @@ public class harrisBenedictCalculator {
 
         switch (sex) {
             case 1:
-                BMR = (88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age));
+                BMR = (66.5 + (13.75 * weight) + (5.003 * height) - (6.775 * age));
                 break;
 
             case 2:
-                BMR = (447.593 + (9.247 * weight) + (3.090 * height) - (4.330 * age));
+                BMR = (655.1 + (9.563 * weight) + (1.85 * height) - (4.676 * age));
                 break;
         }
 
