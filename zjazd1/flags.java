@@ -6,7 +6,7 @@ Author: Marcel
 import java.util.Scanner; // Import Scanner class for get user input
 
 public class flags {
-    static void drawFlag(String flagCountry[][], int size) {
+    static void drawFlag(String flagCountry[][], int size) { //universal class for drawing flag
         for (int i = 0; i < 12; i++) {
             if (i % size == 0) {
                 for (int j = 0; j < 18; j++) {
@@ -21,7 +21,7 @@ public class flags {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        String[][] polish = new String[12][18];
+        String[][] polish = new String[12][18]; //responsible for polish flag
         for (int i = 0; i < 12; i++) {
             for (int j = 0; j < 18; j++) {
                 if (i < 6) polish[i][j] = ".";
