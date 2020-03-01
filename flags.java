@@ -24,10 +24,11 @@ public class flags {
         String[][] polish = new String[12][18];
         for (int i = 0; i < 12; i++) {
             for (int j = 0; j < 18; j++) {
-                if (i < 6) polish[i][j] = "*";
+                if (i < 6) polish[i][j] = ".";
                 else polish[i][j] = "o";
             }
         }
+
 
         System.out.println("Choice flag size \n1. big \n2. medium \n3. small");
     int choice = scan.nextInt();
@@ -40,6 +41,7 @@ public class flags {
                 break;
             case 3:
                 drawFlag(polish, 3 );
+                System.out.println();
                 break;
         }
 
