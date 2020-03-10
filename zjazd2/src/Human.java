@@ -1,3 +1,7 @@
+/*
+Simple Human class and object with my data implemented in Java.
+Author: Marcel
+*/
 public class Human {
     private int age;
     private float weight;
