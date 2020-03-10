@@ -1,11 +1,11 @@
 public class Human {
-  private int age;
-  private float weight;
-  private float height;
-  private boolean isMale;
-  private int indexNumber;
-  private float feetSize;
-  private String name;
+    private int age;
+    private float weight;
+    private float height;
+    private boolean isMale;
+    private int indexNumber;
+    private float feetSize;
+    private String name;
 
     public Human(int age, float weight, float height, boolean isMale, int indexNumber, float feetSize, String name) {
         this.age = age;
@@ -75,8 +75,7 @@ public class Human {
 
 
     public static void main(String[] args) {
-      Human iAmMarcel = new Human(23, 70,185, true, 21167,45, "Marcel")
-      ;
+        Human iAmMarcel = new Human(23, 70, 185, true, 21167, 45, "Marcel");
     }
 
 }
