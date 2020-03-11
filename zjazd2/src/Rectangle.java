@@ -27,22 +27,25 @@ public class Rectangle {
     public void setWidth(float width) {
         this.width = width;
     }
-    static void calcRectangleArea(float lenght, float width){
+
+    static void calcRectangleArea(float lenght, float width) {
         float area = lenght * width;
         System.out.println(area);
     }
-    static void calcRectangleCircuit(float lenght, float width){
+
+    static void calcRectangleCircuit(float lenght, float width) {
         float circuit = (2 * lenght + 2 * width);
         System.out.println(circuit);
     }
-    static void calcRectangleDiagonal(float lenght, float width){
-        double diagonal = Math.sqrt((Math.pow(lenght, 2)+Math.pow(width, 2)));
+
+    static void calcRectangleDiagonal(float lenght, float width) {
+        double diagonal = Math.sqrt((Math.pow(lenght, 2) + Math.pow(width, 2)));
         System.out.println(diagonal);
     }
 
     public static void main(String[] args) {
-    calcRectangleArea(5, 10);
-    calcRectangleCircuit(5, 10);
-    calcRectangleDiagonal(5,10);
+        calcRectangleArea(5, 10);
+        calcRectangleCircuit(5, 10);
+        calcRectangleDiagonal(5, 10);
     }
 }
