@@ -2,7 +2,6 @@
 Simple Triangle class and methods calculating area, circuit and defining it type implemented in Java.
 Author: Marcel
 */
-
 public class Triangle {
 
     private float firstSide;

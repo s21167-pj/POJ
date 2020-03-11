@@ -2,7 +2,6 @@
 Simple Rectangle class and methods calculating area, circuit and diagonal implemented in Java.
 Author: Marcel
 */
-
 public class Rectangle {
     private float lenght;
     private float width;
