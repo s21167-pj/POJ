@@ -58,7 +58,6 @@ public class Triangle {
             System.out.println("Equilateral");
         else
             System.out.println("No equilateral");
-
     }
 
     static void isIsosceles(float firstSide, float secondSide, float thirdSide) {
@@ -76,12 +75,10 @@ public class Triangle {
     }
 
     public static void main(String[] args) {
-
         calcRectangleArea(30, 20, 30);
         calcRectangleCircuit(30, 20, 30);
         isEquilateral(10, 10, 10);
         isIsosceles(10, 20, 10);
         isScalene(10, 20, 30);
-
     }
 }
