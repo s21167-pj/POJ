@@ -31,7 +31,6 @@ public class Account {
     }
 
     public int credit(int amount) {
-        System.out.println(balance = balance + amount);
         return balance = balance + amount;
     }
 
@@ -40,7 +39,6 @@ public class Account {
             balance = balance - amount;
         else
             System.out.println("Amount exceeded balance");
-        System.out.println(balance);
         return balance;
     }
 
@@ -48,10 +46,6 @@ public class Account {
         if (amount <= balance)
             balance = balance - amount;
         another.balance += another.balance + amount;
-        System.out.println(another.balance);
-        //else
-        //  System.out.println("Amount exceeded balance");
-        // System.out.println(balance);
         return balance;
     }
 

@@ -40,7 +40,6 @@ public class InvoiceItem {
     }
     public double getTotal(){
         double total = unitPrice * qty;
-        System.out.println(total);
         return unitPrice * qty;
     }
 

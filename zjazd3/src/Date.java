@@ -14,8 +14,6 @@ public class Date {
         this.year = year;
     }
 
-
-
     public int getDay() {
         return day;
     }
@@ -50,7 +48,6 @@ public class Date {
     public String toString() {
         String formattedDay = String.format("%02d", day);
         String formattedMonth = String.format("%02d", month);
-        System.out.println(String.format("%s/%s/%s", formattedDay, formattedMonth, year));
         return String.format("%s/%s/%s", formattedDay, formattedMonth, year);
     }
 

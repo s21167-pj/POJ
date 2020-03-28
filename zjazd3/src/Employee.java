@@ -42,12 +42,10 @@ public class Employee {
     }
 
     public int getAnnualSalary (){
-        System.out.println(salary);
         return salary * 12;
     }
     public int raiseSalary(int percent){
         salary += salary * percent / 100;
-        System.out.println(salary);
         return salary;
     }
 
