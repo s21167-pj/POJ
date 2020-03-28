@@ -53,6 +53,6 @@ public class Date {
 
     public static void main(String[] args) {
         Date date = new Date(5, 1, 1996);
-        date.toString();
+       // date.toString();
     }
 }
