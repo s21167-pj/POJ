@@ -12,12 +12,6 @@ public class EmployeeArray {
     private int salary;
     private int joinDate;
 
-    public EmployeeArray(String name, int salary, int joinDate) {
-        this.name = name;
-        this.salary = salary;
-        this.joinDate = joinDate;
-    }
-
     public EmployeeArray() {
 
     }
