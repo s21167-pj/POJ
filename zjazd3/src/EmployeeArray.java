@@ -31,6 +31,7 @@ public class EmployeeArray {
             temp.joinDate = year.nextInt(highYear - lowYear) + lowYear;
             employeeAll.add(temp);
         }
+
         employeeAll.forEach(System.out::println);
     }
 
