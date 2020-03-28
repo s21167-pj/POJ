@@ -14,10 +14,7 @@ public class Date {
         this.year = year;
     }
 
-    public static void main(String[] args) {
-        Date date = new Date(5, 1, 1996);
-        date.toString();
-    }
+
 
     public int getDay() {
         return day;
@@ -55,5 +52,10 @@ public class Date {
         String formattedMonth = String.format("%02d", month);
         System.out.println(String.format("%s/%s/%s", formattedDay, formattedMonth, year));
         return String.format("%s/%s/%s", formattedDay, formattedMonth, year);
+    }
+
+    public static void main(String[] args) {
+        Date date = new Date(5, 1, 1996);
+        date.toString();
     }
 }
