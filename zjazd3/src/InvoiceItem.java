@@ -55,8 +55,8 @@ public class InvoiceItem {
     }
 
     public static void main(String[] args) {
-    InvoiceItem Maciek = new InvoiceItem(1, "balony", 50000, 2.50);
-    Maciek.getTotal();
+    InvoiceItem maciek = new InvoiceItem(1, "balony", 50000, 2.50);
+    maciek.getTotal();
 
     }
 }
