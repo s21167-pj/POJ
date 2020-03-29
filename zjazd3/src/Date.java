@@ -51,8 +51,6 @@ public class Date {
         return String.format("%s/%s/%s", formattedDay, formattedMonth, year);
     }
 
-    public static void main(String[] args) {
-        Date date = new Date(5, 1, 1996);
-       // date.toString();
-    }
+
 }
+

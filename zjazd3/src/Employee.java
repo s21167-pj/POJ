@@ -42,6 +42,7 @@ public class Employee {
     }
 
     public int getAnnualSalary (){
+        System.out.println(salary * 12);
         return salary * 12;
     }
     public int raiseSalary(int percent){
@@ -58,14 +59,6 @@ public class Employee {
                 '}';
     }
 
-    public static void main(String[] args) {
-	// write your code here
-        Employee marcin = new Employee(1,"Marcin", "Kowalski", 10000);
-        marcin.getAnnualSalary();
-        marcin.raiseSalary(10);
-
-
-    }
 }
 
 

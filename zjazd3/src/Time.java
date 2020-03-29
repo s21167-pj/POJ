@@ -13,11 +13,6 @@ public class Time {
         this.second = second;
     }
 
-    public static void main(String[] args) {
-        Time time = new Time(23, 59, 59);
-        //  time.toString();
-
-    }
 
     public int getHour() {
         return hour;

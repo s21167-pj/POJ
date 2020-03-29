@@ -40,7 +40,8 @@ public class InvoiceItem {
     }
     public double getTotal(){
         double total = unitPrice * qty;
-        return unitPrice * qty;
+        System.out.println(total);
+        return total;
     }
 
     @Override
@@ -53,9 +54,4 @@ public class InvoiceItem {
                 '}';
     }
 
-    public static void main(String[] args) {
-    InvoiceItem maciek = new InvoiceItem(1, "balony", 50000, 2.50);
-    maciek.getTotal();
-
-    }
 }

@@ -38,14 +38,16 @@ public class Account {
         if (amount <= balance)
             balance = balance - amount;
         else
-            System.out.println("Amount exceeded balance");
+            System.out.println("Amount you want to withdraw exceeded balance");
         return balance;
     }
 
     public int transferTo(Account another, int amount) {
-        if (amount <= balance)
+        if (amount <= balance) {
             balance = balance - amount;
-        another.balance += another.balance + amount;
+            another.balance = another.balance + amount;
+        } else
+            System.out.println("You can't transfer more than you have");
         return balance;
     }
 
@@ -58,13 +60,5 @@ public class Account {
                 '}';
     }
 
-    public static void main(String[] args) {
-        Account kuba = new Account("1", "kubowe", 100);
-        Account bartek = new Account("2", "bartkowe", 50);
-
-        kuba.credit(1500);
-        bartek.debit(50);
-        kuba.transferTo(bartek, 1);
-    }
 
 }
