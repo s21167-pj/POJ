@@ -24,13 +24,3 @@ public class DifferentWords {
 
     }
 }
-
-
-
-
-
-/*
-1. read file
-2. split diff words
-3. calc sum of them
- */

@@ -16,7 +16,8 @@ public class DifferentWordsCount {
         content = content.toLowerCase().replaceAll("[,.:;]", "");
         List<String> wordList = Arrays.asList(content.split(" "));
 
-        Set<String> uniqueWords = new HashSet<>(wordList);
+        Map<String, Integer> mapOfWords = new TreeMap<>();
+        Set<String> uniqueWords = new TreeSet<>(wordList);
         for (String word : uniqueWords) {
             System.out.println(word + "=" + Collections.frequency(wordList, word));
         }
