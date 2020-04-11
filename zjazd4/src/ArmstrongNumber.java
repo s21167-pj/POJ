@@ -29,5 +29,7 @@ public class ArmstrongNumber {
     public static void main(String[] args) {
         isArmstrongNumber(153);
         isArmstrongNumber(123);
+        isArmstrongNumber(1634);
+
     }
 }
