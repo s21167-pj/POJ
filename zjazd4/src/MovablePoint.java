@@ -1,9 +1,9 @@
-import java.util.Locale;
-
 /*
 MovablePoint UML chart extending Point implemented in Java.
 Author: Marcel P
  */
+import java.util.Locale;
+
 public class MovablePoint extends Point {
     private float xSpeed = 0.0f;
     private float ySpeed = 0.0f;

@@ -1,9 +1,9 @@
-import java.util.Locale;
-
 /*
 Point UML chart implemented in Java.
 Author: Marcel P
  */
+import java.util.Locale;
+
 public class Point {
     private float x = 0.0f;
     private float y = 0.0f;

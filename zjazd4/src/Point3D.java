@@ -1,9 +1,9 @@
-import java.util.Locale;
-
 /*
 Point3D UML chart extending Point2D implemented in Java.
 Author: Marcel P
  */
+import java.util.Locale;
+
 public class Point3D extends Point2D {
     private float z = 0.0f;
 
