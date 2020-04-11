@@ -2,6 +2,9 @@
 Point2D UML chart implemented in Java.
 Author: Marcel P
  */
+
+import java.util.Locale;
+
 public class Point2D {
     private float x = 0.0f;
     private float y = 0.0f;
@@ -36,15 +39,13 @@ public class Point2D {
     }
 
     public float[] getXY() {
-        float[] result = {this.getX(), this.getY()};
+        float[] result = {x, y};
         return result;
     }
 
     @Override
     public String toString() {
-        return '(' +
-                "x=" + x +
-                ", y=" + y +
-                ')';
+        return String.format(Locale.US, "\"(%.1f,%.1f)\"", x, y);
     }
-}
+    }
+

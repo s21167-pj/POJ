@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 /*
 MovablePoint UML chart extending Point implemented in Java.
 Author: Marcel P
@@ -43,8 +45,8 @@ public class MovablePoint extends Point {
 
     @Override
     public String toString() {
-        return "(" + this.getX() + "," + this.getY() + ")" + "," +
-                "speed=" + "(" + this.getXSpeed() + "," + this.getYSpeed() + ")";
+        return String.format(Locale.US, "\"(%.1f,%.1f),speed=(%.1f,%.1f)\"",
+                getX(), getY(), xSpeed, ySpeed);
     }
 
     public MovablePoint move() {

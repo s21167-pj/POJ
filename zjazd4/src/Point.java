@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 /*
 Point UML chart implemented in Java.
 Author: Marcel P
@@ -36,15 +38,13 @@ public class Point {
     }
 
     public float[] getXY() {
-        float[] result = {this.getX(), this.getY()};
+        float[] result = {x, y};
+        System.out.println(result);
         return result;
     }
 
     @Override
     public String toString() {
-        return '(' +
-                "x=" + x +
-                ", y=" + y +
-                ')';
+        return String.format(Locale.US, "\"(%.1f,%.1f)\"", x, y);
     }
 }

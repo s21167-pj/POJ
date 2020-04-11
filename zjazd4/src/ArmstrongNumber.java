@@ -14,7 +14,7 @@ public class ArmstrongNumber {
         int validateResult = 0;
         List<Double> superDigits = new ArrayList<Double>();
         while (numberToCheck > 0) {
-            superDigits.add(Math.pow(numberToCheck % 10, lengthOfNumber));
+            superDigits.add(Math.pow(numberToCheck % 10, lengthOfNumber)); //powered(x length) modulo
             numberToCheck /= 10;
         }
         for (Double d : superDigits)
