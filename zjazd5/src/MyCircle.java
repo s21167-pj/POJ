@@ -63,14 +63,29 @@ public class MyCircle {
     @Override
     public String toString() {
         return "MyCircle[" +
-                radius + "=r"+ "," +
+                radius + "=r" + "," +
                 "center=" + center.toString() +
                 "]";
     }
 
-
     public static void main(String[] args) {
-        MyCircle kolko = new MyCircle(1,2,2);
-        System.out.println(kolko.toString());
+        MyCircle awesomeCircle = new MyCircle(1, 2, 2);
+        System.out.println(awesomeCircle.toString());
+        MyCircle notAwesomeCircle = new MyCircle(2, 3, 2);
+        awesomeCircle.distance(notAwesomeCircle);
+    }
+
+    public double getArea() {
+        return Math.PI * Math.pow(radius, 2.0);
+    }
+
+    public double getCircumference() {
+        return 2 * Math.PI * radius;
+    }
+
+    public double distance(MyCircle another) {
+        double centersDistance = center.distance(another.center);
+        // System.out.println(centersDistance);
+        return centersDistance;
     }
 }
