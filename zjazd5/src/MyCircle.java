@@ -68,13 +68,6 @@ public class MyCircle {
                 "]";
     }
 
-    public static void main(String[] args) {
-        MyCircle awesomeCircle = new MyCircle(1, 2, 2);
-        System.out.println(awesomeCircle.toString());
-        MyCircle notAwesomeCircle = new MyCircle(2, 3, 2);
-        awesomeCircle.distance(notAwesomeCircle);
-    }
-
     public double getArea() {
         return Math.PI * Math.pow(radius, 2.0);
     }
@@ -83,9 +76,15 @@ public class MyCircle {
         return 2 * Math.PI * radius;
     }
 
+    public static void main(String[] args) {
+        MyCircle awesomeCircle = new MyCircle(1, 2, 2);
+        System.out.println(awesomeCircle.toString());
+        MyCircle notAwesomeCircle = new MyCircle(2, 3, 2);
+        awesomeCircle.distance(notAwesomeCircle);
+    }
+
     public double distance(MyCircle another) {
-        double centersDistance = center.distance(another.center);
         // System.out.println(centersDistance);
-        return centersDistance;
+        return center.distance(another.center);
     }
 }
