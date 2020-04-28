@@ -66,7 +66,7 @@ public class MyPoint {
             points[i] = new MyPoint(i + 1, i + 1);
 
         }
-        var myPointsArray = Arrays.toString(points);
+        String myPointsArray = Arrays.toString(points);
         System.out.println(myPointsArray);
     }
 
