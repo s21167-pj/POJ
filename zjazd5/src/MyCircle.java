@@ -10,7 +10,7 @@ public class MyCircle {
     public MyCircle() {
     }
 
-    public MyCircle(int x, int y, int radius){
+    public MyCircle(int x, int y, int radius) {
         this.center = new MyPoint(x, y);
         this.radius = radius;
     }
@@ -36,19 +36,19 @@ public class MyCircle {
         this.center = center;
     }
 
-    public int getCenterX(){
+    public int getCenterX() {
         return center.getX();
     }
 
-    public void setCenterX(int x){
-       this.center.setX(x);
+    public void setCenterX(int x) {
+        this.center.setX(x);
     }
 
-    public int getCenterY(){
+    public int getCenterY() {
         return center.getY();
     }
 
-    public void setCenterY(int y){
+    public void setCenterY(int y) {
         this.center.setY(y);
     }
 

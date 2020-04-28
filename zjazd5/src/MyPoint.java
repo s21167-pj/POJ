@@ -60,26 +60,25 @@ public class MyPoint {
         return distanceGivenPoint;
     }
 
-    public double distance(MyPoint another){
+    public static void main(String[] args) {
+        MyPoint[] points = new MyPoint[10];
+        for (int i = 0; i < points.length; i++) {
+            points[i] = new MyPoint(i + 1, i + 1);
+
+        }
+        var myPointsArray = Arrays.toString(points);
+        System.out.println(myPointsArray);
+    }
+
+    public double distance(MyPoint another) {
         double distanceAnotherPoint = Math.sqrt((Math.pow((x - another.x), 2) + (Math.pow((y - another.y), 2))));
         System.out.println(distanceAnotherPoint);
         return distanceAnotherPoint;
     }
 
-    public double distance(){
+    public double distance() {
         double distanceZeroZeroPoint = Math.sqrt((Math.pow(x, 2) + (Math.pow(y, 2))));
         System.out.println(distanceZeroZeroPoint);
         return distanceZeroZeroPoint;
-    }
-
-
-    public static void main(String[] args) {
-        MyPoint[] points = new MyPoint[10];
-        for(int i =0; i<points.length; i++){
-            points[i] = new MyPoint(i+1,i+1);
-
-        }
-        var myPointsArray = Arrays.toString(points);
-        System.out.println(myPointsArray);
     }
 }
