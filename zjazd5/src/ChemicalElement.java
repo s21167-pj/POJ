@@ -77,8 +77,7 @@ public class ChemicalElement {
                 || atomicNumber == 37 || atomicNumber == 55 || atomicNumber == 87) {
             answer = "It is alkali metal.";
             return answer;
-        } else ;
-        return answer;
+        } else return answer;
     }
 
     public String isMetal(int atomicNumber) {
@@ -88,8 +87,7 @@ public class ChemicalElement {
                 || 113 <= atomicNumber && atomicNumber <= 116) {
             answer = "It is metal.";
             return answer;
-        } else ;
-        return answer;
+        } else return answer;
     }
 
     public String isTransition(int atomicNumber) {
@@ -99,8 +97,7 @@ public class ChemicalElement {
                 || 72 <= atomicNumber && atomicNumber <= 80) {
             answer = "It is transition metal.";
             return answer;
-        } else ;
-        return answer;
+        } else return answer;
     }
 
     public String toString() {
