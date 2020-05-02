@@ -29,7 +29,7 @@ public class ChemicalElement {
     public ChemicalElement() throws IOException {
         elements = new ArrayList<>();
         List<String> list = Files.readAllLines(Paths.get("src/files/data.txt"));
-        list.forEach(this::process);
+        list.forEach(this::addData);
 
     }
 
@@ -44,7 +44,7 @@ public class ChemicalElement {
         System.out.println(table.findByNumber(116));
     }
 
-    private void process(String line) {
+    private void addData(String line) {
         try (Scanner scanner = new Scanner(line)) {
             int atomicNumber = scanner.nextInt();
             String symbol = scanner.next();

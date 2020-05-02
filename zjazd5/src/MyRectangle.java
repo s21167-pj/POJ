@@ -35,7 +35,7 @@ public class MyRectangle {
     public double getArea() {
         double area = (getLength() * getWidth());
         System.out.println(area);
-        return getLength() * getWidth();
+        return area;
     }
 
     public double getPerimeter() {
