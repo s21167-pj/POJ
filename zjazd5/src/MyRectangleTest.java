@@ -13,5 +13,10 @@ public class MyRectangleTest {
         recTwo.getArea();
         recTwo.getPerimeter();
         System.out.println(recTwo.toString());
+        MyRectangle recThree = new MyRectangle(-10, -20, -5, -10);
+        recThree.getArea();
+        recThree.getPerimeter();
+        System.out.println(recThree.toString());
+
     }
 }
