@@ -45,7 +45,7 @@ public class GradesStatistics {
         }
         standardDeviation = Math.sqrt(standardDeviation / gradesAll.size());
         average = sumGrades / gradesAll.size();
-        System.out.printf("The average is: %.2f \n", average, "\n");
+        System.out.printf("The average is: %.2f \n", average);
         System.out.printf("The median is: %.2f \n", median);
         System.out.println("The minimum is: " + Collections.min(gradesAll));
         System.out.println("The maximum is: " + Collections.max(gradesAll));
