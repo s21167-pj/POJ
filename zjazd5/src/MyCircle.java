@@ -63,7 +63,7 @@ public class MyCircle {
     @Override
     public String toString() {
         return "MyCircle[" +
-                radius + "=r" + "," +
+                "radius=" + radius + "," +
                 "center=" + center.toString() +
                 "]";
     }

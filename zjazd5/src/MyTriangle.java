@@ -33,14 +33,14 @@ public class MyTriangle {
         return v1.distance(v2) + v2.distance(v3) + v3.distance(v1);
     }
 
-    public void getType() {
+    public String getType() {
         if (v1.distance(v2) == v2.distance(v3) && v2.distance(v3) == v3.distance(v1)) {
-            System.out.println("Equilateral");
+            return "Equilateral";
         } else if (v1.distance(v2) == v2.distance(v3) || v2.distance(v3) == v3.distance(v1)
                 || v3.distance(v1) == v1.distance(v2)) {
-            System.out.println("Isosceles");
+            return "Isosceles";
         } else {
-            System.out.println("Scalene");
+            return "Scalene";
         }
     }
 
