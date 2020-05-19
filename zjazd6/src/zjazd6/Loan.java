@@ -39,12 +39,14 @@ public abstract class Loan implements LoanConstants {
 
     @Override
     public String toString() {
-        return "Loan{" +
-                "loanNumber=" + loanNumber +
-                ", customerName='" + customerName + '\'' +
-                ", loanAmount=" + (loanAmount + (loanAmount * (interestRate / 100))) +
-                ", interestRate=" + interestRate +
-                ", term=" + term +
-                '}';
+        String formattedDate = String.format("%.3f", interestRate);
+        String formattedAmount = String.format("%.2f", (loanAmount + (loanAmount * (interestRate / 100) * term)));
+        return "Loan[" +
+                "loanNumber= " + loanNumber +
+                ", customerName= '" + customerName + '\'' +
+                ", loanAmount= " + formattedAmount +
+                ", interestRate= " + formattedDate +
+                ", term=" + term + " years" +
+                ']';
     }
 }
