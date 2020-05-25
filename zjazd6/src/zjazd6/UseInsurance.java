@@ -14,10 +14,10 @@ public class UseInsurance {
         Scanner input = new Scanner(System.in);
         String userInput = input.next();
         if (userInput.equals("1")) {
-            testInsurance = new Health("Health insurance");
+            testInsurance = new Health();
             testInsurance.display();
         } else if (userInput.equals("2")) {
-            testInsurance = new Life("Life insurance");
+            testInsurance = new Life();
             testInsurance.display();
         } else {
             System.out.println("There is only 2 choices");

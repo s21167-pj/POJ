@@ -7,8 +7,8 @@ package zjazd6;
 */
 class Health extends Insurance {
 
-    public Health(String type) {
-        super(type);
+    public Health() {
+        super("Health");
         setCost();
     }
 

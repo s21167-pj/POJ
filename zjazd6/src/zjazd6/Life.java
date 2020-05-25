@@ -6,8 +6,8 @@ package zjazd6;
     Date: 17.05.2020
 */
 class Life extends Insurance {
-    public Life(String type) {
-        super(type);
+    public Life() {
+        super("Life");
         setCost();
     }
 
